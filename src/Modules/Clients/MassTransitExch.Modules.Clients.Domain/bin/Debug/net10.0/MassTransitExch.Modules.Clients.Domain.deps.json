@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "MassTransitExch.Modules.Clients.Domain/1.0.0": {
+        "dependencies": {
+          "MassTransitExch.Common.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MassTransitExch.Modules.Clients.Domain.dll": {}
+        }
+      },
+      "MassTransitExch.Common.Domain/1.0.0": {
+        "runtime": {
+          "MassTransitExch.Common.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MassTransitExch.Modules.Clients.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MassTransitExch.Common.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

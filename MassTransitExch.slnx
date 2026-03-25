@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Api/">
+    <Project Path="src/Api/MassTransitExch.Api/MassTransitExch.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Common/">
+    <Project Path="src/Common/MassTransitExch.Common.Application/MassTransitExch.Common.Application.csproj" />
+    <Project Path="src/Common/MassTransitExch.Common.Domain/MassTransitExch.Common.Domain.csproj" />
+    <Project Path="src/Common/MassTransitExch.Common.Infrastructure/MassTransitExch.Common.Infrastructure.csproj" />
+    <Project Path="src/Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Clients/">
+    <Project Path="src/Modules/Clients/MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj" />
+    <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/MassTransitExch.Modules.Clients.Domain.csproj" />
+    <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.Infrastructure/MassTransitExch.Modules.Clients.Infrastructure.csproj" />
+    <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.IntegrationEvents/MassTransitExch.Modules.Clients.IntegrationEvents.csproj" />
+    <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Vehicles/">
+    <Project Path="src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Application/MassTransitExch.Modules.Vehicles.Application.csproj" />
+    <Project Path="src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/MassTransitExch.Modules.Vehicles.Domain.csproj" />
+    <Project Path="src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Infrastructure/MassTransitExch.Modules.Vehicles.Infrastructure.csproj" />
+    <Project Path="src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Presentation/MassTransitExch.Modules.Vehicles.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+
+</Solution>

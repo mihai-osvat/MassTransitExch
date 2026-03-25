@@ -1,0 +1,15 @@
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/bin/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.deps.json
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/bin/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/bin/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.pdb
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/bin/Debug/net10.0/MassTransitExch.Common.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/bin/Debug/net10.0/MassTransitExch.Common.Domain.pdb
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.csproj.AssemblyReference.cache
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.AssemblyInfoInputs.cache
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.AssemblyInfo.cs
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.csproj.CoreCompileInputs.cache
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTran.A25B2CEB.Up2Date
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/refint/MassTransitExch.Modules.Vehicles.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Vehicles.Domain.pdb
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Vehicles/MassTransitExch.Modules.Vehicles.Domain/obj/Debug/net10.0/ref/MassTransitExch.Modules.Vehicles.Domain.dll

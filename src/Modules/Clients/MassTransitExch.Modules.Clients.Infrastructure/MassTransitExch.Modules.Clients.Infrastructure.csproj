@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.5" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../Common/MassTransitExch.Common.Infrastructure/MassTransitExch.Common.Infrastructure.csproj" />
+    <ProjectReference Include="../MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj" />
+    <ProjectReference Include="../MassTransitExch.Modules.Clients.IntegrationEvents/MassTransitExch.Modules.Clients.IntegrationEvents.csproj" />
+    <ProjectReference Include="../MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Clients/" />
+    <Folder Include="Database/" />
+  </ItemGroup>
+
+</Project>

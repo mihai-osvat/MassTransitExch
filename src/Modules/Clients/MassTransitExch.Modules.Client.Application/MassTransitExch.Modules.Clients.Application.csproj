@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions/" />
+    <Folder Include="CreateClient/" />
+    <Folder Include="GetClient/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../Common/MassTransitExch.Common.Application/MassTransitExch.Common.Application.csproj" />
+    <ProjectReference Include="../MassTransitExch.Modules.Clients.Domain/MassTransitExch.Modules.Clients.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

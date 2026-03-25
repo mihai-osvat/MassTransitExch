@@ -1,0 +1,15 @@
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/bin/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.deps.json
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/bin/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/bin/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.pdb
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/bin/Debug/net10.0/MassTransitExch.Common.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/bin/Debug/net10.0/MassTransitExch.Common.Domain.pdb
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.csproj.AssemblyReference.cache
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.AssemblyInfoInputs.cache
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.AssemblyInfo.cs
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.csproj.CoreCompileInputs.cache
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTran.B19B9575.Up2Date
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/refint/MassTransitExch.Modules.Clients.Domain.dll
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/MassTransitExch.Modules.Clients.Domain.pdb
+/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/obj/Debug/net10.0/ref/MassTransitExch.Modules.Clients.Domain.dll
