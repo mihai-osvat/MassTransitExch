@@ -13,7 +13,8 @@
 
   <ItemGroup>
     <Folder Include="Abstractions/" />
-    <Folder Include="CreateVehicle/" />
+    <Folder Include="Owners/" />
+    <Folder Include="Owners/CreateOwner/" />
   </ItemGroup>
 
 </Project>

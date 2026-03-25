@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Owners/" />
     <Folder Include="Vehicles/" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../../Common/MassTransitExch.Common.IntegrationEvents/MassTransitExch.Common.IntegrationEvents.csproj" />
     <ProjectReference Include="../../../Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj" />
     <ProjectReference Include="../MassTransitExch.Modules.Vehicles.Application/MassTransitExch.Modules.Vehicles.Application.csproj" />
   </ItemGroup>

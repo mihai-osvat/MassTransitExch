@@ -154,6 +154,19 @@
           "bin/placeholder/MassTransitExch.Common.Domain.dll": {}
         }
       },
+      "MassTransitExch.Common.IntegrationEvents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "MassTransitExch.Common.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MassTransitExch.Common.IntegrationEvents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MassTransitExch.Common.IntegrationEvents.dll": {}
+        }
+      },
       "MassTransitExch.Common.Presentation/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -172,6 +185,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "MassTransitExch.Common.Application": "1.0.0",
+          "MassTransitExch.Common.IntegrationEvents": "1.0.0",
           "MassTransitExch.Modules.Clients.Domain": "1.0.0"
         },
         "compile": {
@@ -444,6 +458,11 @@
       "path": "../../../Common/MassTransitExch.Common.Domain/MassTransitExch.Common.Domain.csproj",
       "msbuildProject": "../../../Common/MassTransitExch.Common.Domain/MassTransitExch.Common.Domain.csproj"
     },
+    "MassTransitExch.Common.IntegrationEvents/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/MassTransitExch.Common.IntegrationEvents/MassTransitExch.Common.IntegrationEvents.csproj",
+      "msbuildProject": "../../../Common/MassTransitExch.Common.IntegrationEvents/MassTransitExch.Common.IntegrationEvents.csproj"
+    },
     "MassTransitExch.Common.Presentation/1.0.0": {
       "type": "project",
       "path": "../../../Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj",
@@ -467,36 +486,36 @@
     ]
   },
   "packageFolders": {
-    "/Users/mihai/.nuget/packages/": {}
+    "/home/mihai/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj",
+      "projectUniqueName": "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj",
       "projectName": "MassTransitExch.Modules.Clients.Presentation",
-      "projectPath": "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj",
-      "packagesPath": "/Users/mihai/.nuget/packages/",
-      "outputPath": "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/obj/",
+      "projectPath": "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj",
+      "packagesPath": "/home/mihai/.nuget/packages/",
+      "outputPath": "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mihai/.nuget/NuGet/NuGet.Config"
+        "/home/mihai/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj": {
-              "projectPath": "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj"
+            "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj": {
+              "projectPath": "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj"
             },
-            "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj": {
-              "projectPath": "/Users/mihai/Documents/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj"
+            "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj": {
+              "projectPath": "/mnt/Data/work/goz/dotnet/MassTransitExch/src/Modules/Clients/MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj"
             }
           }
         }
@@ -532,7 +551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

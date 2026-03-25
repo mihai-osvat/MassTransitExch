@@ -7,6 +7,7 @@
     <Project Path="src/Common/MassTransitExch.Common.Application/MassTransitExch.Common.Application.csproj" />
     <Project Path="src/Common/MassTransitExch.Common.Domain/MassTransitExch.Common.Domain.csproj" />
     <Project Path="src/Common/MassTransitExch.Common.Infrastructure/MassTransitExch.Common.Infrastructure.csproj" />
+    <Project Path="src/Common/MassTransitExch.Common.IntegrationEvents/MassTransitExch.Common.IntegrationEvents.csproj" />
     <Project Path="src/Common/MassTransitExch.Common.Presentation/MassTransitExch.Common.Presentation.csproj" />
   </Folder>
   <Folder Name="/src/Modules/" />
@@ -14,7 +15,6 @@
     <Project Path="src/Modules/Clients/MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj" />
     <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.Domain/MassTransitExch.Modules.Clients.Domain.csproj" />
     <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.Infrastructure/MassTransitExch.Modules.Clients.Infrastructure.csproj" />
-    <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.IntegrationEvents/MassTransitExch.Modules.Clients.IntegrationEvents.csproj" />
     <Project Path="src/Modules/Clients/MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj" />
   </Folder>
   <Folder Name="/src/Modules/Vehicles/">

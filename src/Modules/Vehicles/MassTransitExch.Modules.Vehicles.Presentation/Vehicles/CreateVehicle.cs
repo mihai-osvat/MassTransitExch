@@ -1,6 +1,6 @@
 using System;
 using MassTransitExch.Common.Presentation.Endpoints;
-using MassTransitExch.Modules.Vehicles.Application.CreateVehicle;
+using MassTransitExch.Modules.Vehicles.Application.Vehicles.CreateVehicle;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;

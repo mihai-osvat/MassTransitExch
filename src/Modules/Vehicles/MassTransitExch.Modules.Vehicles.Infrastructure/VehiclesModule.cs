@@ -1,7 +1,10 @@
-﻿using MassTransitExch.Common.Presentation.Endpoints;
+﻿using MassTransit;
+using MassTransitExch.Common.Presentation.Endpoints;
 using MassTransitExch.Modules.Vehicles.Application.Abstractions;
+using MassTransitExch.Modules.Vehicles.Domain.Owners;
 using MassTransitExch.Modules.Vehicles.Domain.Vehicles;
 using MassTransitExch.Modules.Vehicles.Infrastructure.Database;
+using MassTransitExch.Modules.Vehicles.Infrastructure.Owners;
 using MassTransitExch.Modules.Vehicles.Infrastructure.Vehicles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
@@ -20,6 +23,10 @@ public static class VehiclesModule
         return services;
     }
 
+    public static void AddVehiclesTopology(IRabbitMqBusFactoryConfigurator configurator)
+    {
+        
+    }
     private static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<VehiclesDbContext>((sp, options) =>
@@ -29,6 +36,7 @@ public static class VehiclesModule
         });
 
         services.AddScoped<IVehicleRepository, VehicleRepository>();
+        services.AddScoped<IOwnerRepository, OwnerRepository>();
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<VehiclesDbContext>());
 
         return services;

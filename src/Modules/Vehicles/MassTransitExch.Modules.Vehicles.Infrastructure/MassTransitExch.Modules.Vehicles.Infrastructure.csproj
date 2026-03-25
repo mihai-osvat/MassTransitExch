@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Database/" />
+    <Folder Include="Owners/" />
   </ItemGroup>
 
 </Project>

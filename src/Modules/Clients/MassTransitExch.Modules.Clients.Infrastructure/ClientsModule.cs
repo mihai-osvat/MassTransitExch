@@ -9,9 +9,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using MassTransitExch.Modules.Clients.Application.Abstractions;
 using MassTransitExch.Common.Presentation.Endpoints;
 using MassTransit;
-using MassTransitExch.Modules.Clients.IntegrationEvents;
 using RabbitMQ.Client;
 using MassTransitExch.Common.Infrastructure.Outbox;
+using MassTransitExch.Common.Application.EventBus;
+using MassTransitExch.Common.IntegrationEvents;
 
 namespace MassTransitExch.Modules.Clients.Infrastructure;
 
@@ -19,9 +20,26 @@ public static class ClientsModule
 {
     public static IServiceCollection AddClientsModule(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddInfrastructure(configuration);
         services.AddEndpoints(Presentation.AssemblyReference.Assembly);
+        services.AddInfrastructure(configuration);
         return services;
+    }
+
+
+    public static void AddClientsTopology(IRabbitMqBusFactoryConfigurator configurator)
+    {
+        configurator.Publish<IIntegrationEvent>(c => c.Exclude = true);
+        configurator.Publish<IntegrationEvent>(c => c.Exclude = true);
+        configurator.Message<ClientCreatedIntegrationEvent>(c => c.SetEntityName("ClientsExchange"));
+        configurator.Publish<ClientCreatedIntegrationEvent>(p =>
+        {
+            p.ExchangeType = ExchangeType.Topic;
+            p.Durable = true;
+        });
+        configurator.Send<ClientCreatedIntegrationEvent>(s =>
+        {
+            s.UseRoutingKeyFormatter(ctx => $"client.{ctx.Message.ClientId}.created");
+        });
     }
 
     private static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
@@ -35,24 +53,6 @@ public static class ClientsModule
 
         services.AddScoped<IClientRepository, ClientRepository>();
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ClientsDbContext>());
-
-        services.AddMassTransit(configure =>
-        {
-           configure.UsingRabbitMq((context, configuration) =>
-           {
-               configuration.Host("localhost", "/", h =>
-               {
-                   h.Username("guest");
-                   h.Password("guest");
-               });
-               
-               configuration.Publish<ClientCreatedIntegrationEvent>(x => x.ExchangeType = ExchangeType.Topic);
-               configuration.Send<ClientCreatedIntegrationEvent>(x =>
-               {
-                    x.UseRoutingKeyFormatter(ctx => $"client.{ctx.Message.ClientId}.created");
-               });
-           });
-        });
 
         return services;
     }

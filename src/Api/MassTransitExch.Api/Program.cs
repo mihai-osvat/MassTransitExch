@@ -5,6 +5,7 @@ using MassTransitExch.Common.Application;
 using MassTransitExch.Common.Infrastructure.Configuration;
 using MassTransitExch.Common.Infrastructure;
 using MassTransitExch.Common.Presentation.Endpoints;
+using MassTransitExch.Common.Infrastructure.EventBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,9 +15,16 @@ Assembly[] moduleApplicationAssemblies = [
 ];
 
 string databaseConnectionString = builder.Configuration.GetConnectionStringOrThrow("Database");
+var rabbitMqSettings = new RabbitMqSettings(builder.Configuration.GetConnectionStringOrThrow("Queue"));
 
 builder.Services.AddApplication(moduleApplicationAssemblies);
-builder.Services.AddInfrastructure(databaseConnectionString);
+builder.Services.AddInfrastructure(
+  databaseConnectionString,
+  rabbitMqSettings,
+  [
+    ClientsModule.AddClientsTopology,
+  ]
+);
 
 builder.Services.AddClientsModule(builder.Configuration);
 builder.Services.AddVehiclesModule(builder.Configuration);

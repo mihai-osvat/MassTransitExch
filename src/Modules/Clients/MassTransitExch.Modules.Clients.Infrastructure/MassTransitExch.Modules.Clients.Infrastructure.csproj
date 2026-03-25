@@ -18,7 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="../../../Common/MassTransitExch.Common.Infrastructure/MassTransitExch.Common.Infrastructure.csproj" />
     <ProjectReference Include="../MassTransitExch.Modules.Client.Application/MassTransitExch.Modules.Clients.Application.csproj" />
-    <ProjectReference Include="../MassTransitExch.Modules.Clients.IntegrationEvents/MassTransitExch.Modules.Clients.IntegrationEvents.csproj" />
     <ProjectReference Include="../MassTransitExch.Modules.Clients.Presentation/MassTransitExch.Modules.Clients.Presentation.csproj" />
   </ItemGroup>
 
