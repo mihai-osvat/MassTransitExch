@@ -368,3 +368,5 @@ FodyWeavers.xsd
 /src/API/AutoService.Api/appsettings.Development.json
 /src/API/AutoService.Api/modules.users.Development.json
 .DS_Store/
+**/DS_Store
+
