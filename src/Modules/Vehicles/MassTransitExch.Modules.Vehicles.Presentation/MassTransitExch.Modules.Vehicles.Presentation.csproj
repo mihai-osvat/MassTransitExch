@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Owners/" />
     <Folder Include="Vehicles/" />
   </ItemGroup>
 

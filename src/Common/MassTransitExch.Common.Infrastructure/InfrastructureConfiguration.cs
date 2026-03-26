@@ -12,7 +12,7 @@ public static class InfrastructureConfiguration
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,
         string databaseConnectionString,
         RabbitMqSettings rabbitMqSettings,
-        Action<IRabbitMqBusFactoryConfigurator>[] topologyConfigurators)
+        Action<IBusRegistrationContext, IRabbitMqBusFactoryConfigurator>[] topologyConfigurators)
     {
         services.TryAddSingleton<IEventBus, EventBus.EventBus>();
         services.TryAddSingleton<InsertOutboxMessageInterceptor>();
@@ -27,9 +27,9 @@ public static class InfrastructureConfiguration
                     h.Password(rabbitMqSettings.Password);
                 });
 
-                foreach(Action<IRabbitMqBusFactoryConfigurator> topologyConfigurator in topologyConfigurators)
+                foreach(Action<IBusRegistrationContext, IRabbitMqBusFactoryConfigurator> topologyConfigurator in topologyConfigurators)
                 {
-                    topologyConfigurator(cfg);
+                    topologyConfigurator(context, cfg);
                 }
             });
         });

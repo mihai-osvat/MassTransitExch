@@ -1,4 +1,5 @@
 ﻿using MassTransit;
+using RabbitMQ.Client;
 using MassTransitExch.Common.Presentation.Endpoints;
 using MassTransitExch.Modules.Vehicles.Application.Abstractions;
 using MassTransitExch.Modules.Vehicles.Domain.Owners;
@@ -23,10 +24,22 @@ public static class VehiclesModule
         return services;
     }
 
-    public static void AddVehiclesTopology(IRabbitMqBusFactoryConfigurator configurator)
+    public static void AddVehiclesTopology(IBusRegistrationContext context, IRabbitMqBusFactoryConfigurator configurator)
     {
-        
+        configurator.ReceiveEndpoint("ClientsCreatedQueue", e =>
+        {
+           e.ConfigureConsumeTopology = false;
+
+           e.Bind("ClientsExchange", binder =>
+           {
+                binder.ExchangeType = ExchangeType.Topic;
+                binder.RoutingKey = "client.*.created";
+           });
+
+           e.Consumer<ClientCreatedIntegratedEventConsumer>(context);
+        });
     }
+
     private static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<VehiclesDbContext>((sp, options) =>

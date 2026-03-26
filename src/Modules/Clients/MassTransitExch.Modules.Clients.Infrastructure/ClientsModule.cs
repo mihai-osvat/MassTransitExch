@@ -26,7 +26,7 @@ public static class ClientsModule
     }
 
 
-    public static void AddClientsTopology(IRabbitMqBusFactoryConfigurator configurator)
+    public static void AddClientsTopology(IBusRegistrationContext context, IRabbitMqBusFactoryConfigurator configurator)
     {
         configurator.Publish<IIntegrationEvent>(c => c.Exclude = true);
         configurator.Publish<IntegrationEvent>(c => c.Exclude = true);

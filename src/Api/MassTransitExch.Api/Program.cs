@@ -18,16 +18,19 @@ string databaseConnectionString = builder.Configuration.GetConnectionStringOrThr
 var rabbitMqSettings = new RabbitMqSettings(builder.Configuration.GetConnectionStringOrThrow("Queue"));
 
 builder.Services.AddApplication(moduleApplicationAssemblies);
+
+builder.Services.AddClientsModule(builder.Configuration);
+builder.Services.AddVehiclesModule(builder.Configuration);
+
 builder.Services.AddInfrastructure(
   databaseConnectionString,
   rabbitMqSettings,
   [
     ClientsModule.AddClientsTopology,
+    VehiclesModule.AddVehiclesTopology,
   ]
 );
 
-builder.Services.AddClientsModule(builder.Configuration);
-builder.Services.AddVehiclesModule(builder.Configuration);
 
 var app = builder.Build();
 app.MapEndpoints();
